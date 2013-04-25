@@ -466,7 +466,7 @@
         
       //Update map when viewport change
         scope.$watch('viewport',function(newValue,oldValue){
-        	if (newValue === oldValue) {
+        	if (newValue === oldValue || newValue.sw == undefined) {
                 return;
             }
         	
